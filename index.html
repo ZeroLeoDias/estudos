@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" charset="UTF=8">
+  <head>
+    <title>Página datatables</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Estudos</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="formularios.html">Formularios</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+  
+    <div class="container">
+	    <h1>Cálculo de notas</h1>
+		<form onsubmit="calcular()">
+		  <label>Nota1:</label>
+		  <input id="nota1" type="Number" min="0" max="10" required class="form-control" />
+		  <br/><br/>
+		  <label>Nota2:</label>
+		  <input id="nota2" type="Number" min="0" max="10" required class="form-control" />
+		  <br/><br>
+		  Media:
+		  <input type="text" id="media" readonly class="form-control" /><br/>
+		  Resultado:
+		  <input type="text" id="resultado" readonly class="form-control" /><br/>
+		  <input type="submit" class="btn btn-primary" />
+		</form>
+	</div>
+  </body>
+</html>
